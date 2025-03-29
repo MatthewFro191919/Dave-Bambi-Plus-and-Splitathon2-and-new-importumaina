@@ -2973,7 +2973,8 @@ class PlayState extends MusicBeatState
 				
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
 				add(Platform);
-                                Platform.setGraphicSize(Std.int(Sky.width * 3.2, Sky.hight * 3));
+                                Platform.width * 3.2;
+				Platform.hight * 3;
 				threedeeFarmDream3.push(Platform);
 			}
                         if (SONG.song.toLowerCase() == "old-importumania") // Bambi
