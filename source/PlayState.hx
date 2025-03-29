@@ -3058,7 +3058,7 @@ class PlayState extends MusicBeatState
 
 			if (SONG.song.toLowerCase() == "importumania") {
 				var Sky:BGSprite;
-				var Platform:BGSprite;
+				var Shapes:BGSprite;
 				voidShader(Sky);
 		        	voidShader(Shapes);
                         }
