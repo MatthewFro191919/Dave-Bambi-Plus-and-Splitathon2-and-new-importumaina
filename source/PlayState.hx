@@ -2888,7 +2888,7 @@ class PlayState extends MusicBeatState
 				daveHouseDream.push(shapes);
 						
 				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave', 'shared'), null);
-				add(platform;
+				add(platform);
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
 				daveHouseDream.push(platform);
 			}
