@@ -2921,7 +2921,7 @@ class PlayState extends MusicBeatState
                                 shapes.setGraphicSize(Std.int(shapes.width * 3.1));
 				threedeeFarmDream1.push(shapes);
 						
-				var platformBGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformCheating', 'shared'), null);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformCheating', 'shared'), null);
 				add(platform);
                                 platform.setGraphicSize(Std.int(platform.width * 2.0));
 				threedeeFarmDream1.push(platform);
