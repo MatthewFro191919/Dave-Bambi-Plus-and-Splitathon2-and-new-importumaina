@@ -2870,10 +2870,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				bambiFarmDream.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Import_BamPlat', 'shared'), null);
-				add(Platform);
-                                Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				bambiFarmDream.push(Platform);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Import_BamPlat', 'shared'), null);
+				add(platform);
+                                platform.setGraphicSize(Std.int(platform.width * 2.0));
+				bambiFarmDream.push(platform;
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Dave
 			{
@@ -2887,10 +2887,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				daveHouseDream.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave', 'shared'), null);
-				add(Platform);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave', 'shared'), null);
+				add(platform;
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				daveHouseDream.push(Platform);
+				daveHouseDream.push(platform);
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Tristan
 			{
@@ -2904,10 +2904,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				daveHouseDream.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformTristan', 'shared'), null);
-				add(Platform);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformTristan', 'shared'), null);
+				add(platform);
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				daveHouseDream.push(Platform);
+				daveHouseDream.push(platform);
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi
 			{
@@ -2921,10 +2921,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream1.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformCheating', 'shared'), null);
-				add(Platform);
+				var platformBGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformCheating', 'shared'), null);
+				add(platform);
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				threedeeFarmDream1.push(Platform);
+				threedeeFarmDream1.push(platform);
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi (Unfairness)
 			{
@@ -2938,10 +2938,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream2.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformUnfairness', 'shared'), null);
-				add(Platform);
+				var platformBGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformUnfairness', 'shared'), null);
+				add(platform);
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				threedeeFarmDream2.push(Platform);
+				threedeeFarmDream2.push(platform);
 			}
 
 			if (SONG.song.toLowerCase() == "importumania") // 3d Dave
@@ -2956,10 +2956,10 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				davethreedeeHouseDream.push(shapes);
 						
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave3D', 'shared'), null);
-				add(Platform);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave3D', 'shared'), null);
+				add(platform);
                                 Platform.setGraphicSize(Std.int(Platform.width * 2.0));
-				davethreedeeHouseDream.push(Platform);
+				davethreedeeHouseDream.push(platform);
 			}
 
 			if (SONG.song.toLowerCase() == "importumania") // Expunged True Form
@@ -2974,11 +2974,11 @@ class PlayState extends MusicBeatState
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream3.push(shapes);
 				
-				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
-				add(Platform);
+				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
+				add(platform);
                                 Platform.width * 3.2;
 				Platform.height * 3;
-				threedeeFarmDream3.push(Platform);
+				threedeeFarmDream3.push(platform);
 			}
                         if (SONG.song.toLowerCase() == "old-importumania") // Bambi
 			{
