@@ -355,6 +355,9 @@ class PlayState extends MusicBeatState
 	var lastSinger:Character;
 	var hat:BGSprite;
 
+	var sky:BGSprite;
+	var shapes:BGSprite;
+
 	var crowdPeople:FlxTypedGroup<BGSprite> = new FlxTypedGroup<BGSprite>();
 	
 	var interdimensionBG:BGSprite;
@@ -2648,7 +2651,7 @@ class PlayState extends MusicBeatState
 				bgZoom = 0.8;
 				stageName = 'bedroom';
 				
-				var sky:BGSprite = new BGSprite('nightsky', -285, 318, Paths.image('backgrounds/bedroom/sky', 'shared'), null, 0.8, 0.8, true);
+				sky = new BGSprite('nightsky', -285, 318, Paths.image('backgrounds/bedroom/sky', 'shared'), null, 0.8, 0.8, true);
 				sprites.add(sky);
 				add(sky);
 
@@ -2857,15 +2860,15 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Bambi
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/ImportskyBam', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/ImportskyBam', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				bambiFarmDream.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/ImportShapesBam', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/ImportShapesBam', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				bambiFarmDream.push(Shapes);
+				bambiFarmDream.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Import_BamPlat', 'shared'), null);
 				add(Platform);
@@ -2874,15 +2877,15 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Dave
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				daveHouseDream.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				daveHouseDream.push(Shapes);
+				daveHouseDream.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave', 'shared'), null);
 				add(Platform);
@@ -2891,15 +2894,15 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Tristan
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyTristan', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyTristan', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				daveHouseDream.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesTristan', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesTristan', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				daveHouseDream.push(Shapes);
+				daveHouseDream.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformTristan', 'shared'), null);
 				add(Platform);
@@ -2908,15 +2911,15 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyCheating', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyCheating', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream1.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesCheating', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesCheating', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				threedeeFarmDream1.push(Shapes);
+				threedeeFarmDream1.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformCheating', 'shared'), null);
 				add(Platform);
@@ -2925,15 +2928,15 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi (Unfairness)
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyUnfairness', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyUnfairness', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream2.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesUnfairness', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesUnfairness', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				threedeeFarmDream2.push(Shapes);
+				threedeeFarmDream2.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformUnfairness', 'shared'), null);
 				add(Platform);
@@ -2943,15 +2946,15 @@ class PlayState extends MusicBeatState
 
 			if (SONG.song.toLowerCase() == "importumania") // 3d Dave
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave3D', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave3D', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				davethreedeeHouseDream.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave3D', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave3D', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				davethreedeeHouseDream.push(Shapes);
+				davethreedeeHouseDream.push(shapes);
 						
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformDave3D', 'shared'), null);
 				add(Platform);
@@ -2961,15 +2964,15 @@ class PlayState extends MusicBeatState
 
 			if (SONG.song.toLowerCase() == "importumania") // Expunged True Form
 			{
-				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyExpunged', 'shared'), null);
+				sky = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyExpunged', 'shared'), null);
 				add(sky);
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream3.push(sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
-				add(Shapes);
+				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
+				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
-				threedeeFarmDream3.push(Shapes);
+				threedeeFarmDream3.push(shapes);
 				
 				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
 				add(Platform);
@@ -3058,10 +3061,8 @@ class PlayState extends MusicBeatState
 			}
 
 			if (SONG.song.toLowerCase() == "importumania") {
-				var sky:BGSprite;
-				var Shapes:BGSprite;
 				voidShader(sky);
-		        	voidShader(Shapes);
+		        	voidShader(shapes);
                         }
 
 		if (!revertedBG)
