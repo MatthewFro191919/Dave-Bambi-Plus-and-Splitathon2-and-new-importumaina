@@ -2865,7 +2865,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				bambiFarmDream.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/ImportShapesBam', 'shared'), null);
+				shapes = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/ImportShapesBam', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				bambiFarmDream.push(shapes);
@@ -2882,7 +2882,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				daveHouseDream.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				daveHouseDream.push(shapes);
@@ -2899,7 +2899,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				daveHouseDream.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesTristan', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesTristan', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				daveHouseDream.push(shapes);
@@ -2916,7 +2916,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream1.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesCheating', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesCheating', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream1.push(shapes);
@@ -2933,7 +2933,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream2.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesUnfairness', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesUnfairness', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream2.push(shapes);
@@ -2951,7 +2951,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				davethreedeeHouseDream.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave3D', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave3D', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				davethreedeeHouseDream.push(shapes);
@@ -2969,7 +2969,7 @@ class PlayState extends MusicBeatState
                                 sky.setGraphicSize(Std.int(sky.width * 3.1));
 				threedeeFarmDream3.push(sky);
 		
-				shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
+				shapes= new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
 				add(shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream3.push(shapes);
