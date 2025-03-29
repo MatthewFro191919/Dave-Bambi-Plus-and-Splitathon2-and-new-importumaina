@@ -117,6 +117,7 @@ class FreeplayState extends MusicBeatState
 		'popcorn',
 		'no-legs',
 		'blitz',
+		'old-importumania',
 		'importumania',
 		'rigged',
 		'old-house',
@@ -394,6 +395,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['Duper'], 2, ['bambi-angey', 'bambi-new']);
 				if (FlxG.save.data.importumaniaFound)
 					addWeek(['Importumania'], 14, ['importumania']);
+					addWeek(['Old-Importumania'], 14, ['importumania']);
 				addWeek(['omission'], 21, ['dan']);
 				addWeek(['Doge-Vs-Bambi'], 22, ['doge']);
 			case 'cover':
