@@ -2963,17 +2963,17 @@ class PlayState extends MusicBeatState
 			{
 				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyExpunged', 'shared'), null);
 				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.2, Sky.hight * 3));
+                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
 				threedeeFarmDream3.push(Sky);
 		
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
+				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
 				add(Shapes);
                                 Shapes.setGraphicSize(Std.int(Shapes.width * 3.1));
 				threedeeFarmDream3.push(Shapes);
-						
-				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyUnfairness', 'shared'), null);
+				
+				var Platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Importumania_PlatformExpunged', 'shared'), null);
 				add(Platform);
-                                Platform.setGraphicSize(Std.int(Platform.width * 2.0));
+                                Platform.setGraphicSize(Std.int(Sky.width * 3.2, Sky.hight * 3));
 				threedeeFarmDream3.push(Platform);
 			}
                         if (SONG.song.toLowerCase() == "old-importumania") // Bambi
@@ -3057,7 +3057,9 @@ class PlayState extends MusicBeatState
 			}
 
 			if (SONG.song.toLowerCase() == "importumania") {
-		        	voidShader(Sky);
+				var Sky:BGSprite;
+				var Platform:BGSprite;
+				voidShader(Sky);
 		        	voidShader(Shapes);
                         }
 
