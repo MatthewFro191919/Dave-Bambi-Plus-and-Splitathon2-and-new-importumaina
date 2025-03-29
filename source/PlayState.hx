@@ -395,9 +395,9 @@ class PlayState extends MusicBeatState
 	var smashPhone:Array<Int> = new Array<Int>();
 
 	//recursed
-	var darkSky:BGSprite;
-	var darkSky2:BGSprite;
-	var darkSkyStartPos:Float = 1280;
+	var darksky:BGSprite;
+	var darksky2:BGSprite;
+	var darkskyStartPos:Float = 1280;
 	var resetPos:Float = -2560;
 	var freeplayBG:BGSprite;
 	var daveBG:String;
@@ -1621,25 +1621,25 @@ class PlayState extends MusicBeatState
 					preload('california/$spr');
 				}
 			case 'importumania':
-				preload('backgrounds/importumania/ImportSkyBam');
+				preload('backgrounds/importumania/ImportskyBam');
 				preload('backgrounds/importumania/ImportShapesBam');
 				preload('backgrounds/importumania/Import_BamPlat');
-				preload('backgrounds/importumania/Importumania_SkyDave');
+				preload('backgrounds/importumania/Importumania_skyDave');
 				preload('backgrounds/importumania/Importumania_ShapesDave');
 				preload('backgrounds/importumania/Importumania_PlatformDave');
-				preload('backgrounds/importumania/Importumania_SkyTristan');
+				preload('backgrounds/importumania/Importumania_skyTristan');
 				preload('backgrounds/importumania/Importumania_ShapesTristan');
 				preload('backgrounds/importumania/Importumania_PlatformTristan');
-				preload('backgrounds/importumania/Importumania_SkyCheating');
+				preload('backgrounds/importumania/Importumania_skyCheating');
 				preload('backgrounds/importumania/Importumania_ShapesCheating');
 				preload('backgrounds/importumania/Importumania_PlatformCheating');
-				preload('backgrounds/importumania/Importumania_SkyUnfairness');
+				preload('backgrounds/importumania/Importumania_skyUnfairness');
 				preload('backgrounds/importumania/Importumania_ShapesUnfairness');
 				preload('backgrounds/importumania/Importumania_PlatformUnfairness');
-				preload('backgrounds/importumania/Importumania_SkyDave3D');
+				preload('backgrounds/importumania/Importumania_skyDave3D');
 				preload('backgrounds/importumania/Importumania_ShapesDave3D');
 				preload('backgrounds/importumania/Importumania_PlatformDave3D');
-				preload('backgrounds/importumania/Importumania_SkyExpunged');
+				preload('backgrounds/importumania/Importumania_skyExpunged');
 				preload('backgrounds/importumania/Importumania_ShapesExpunged');
 				preload('backgrounds/importumania/Importumania_PlatformExpunged');
 				preload('characters/3d_bf');
@@ -2448,9 +2448,9 @@ class PlayState extends MusicBeatState
 				bgZoom = 0.7;
 				stageName = 'backyard';
 
-				var festivalSky:BGSprite = new BGSprite('bg', -400, -400, Paths.image('backgrounds/shared/sky_festival'), null, 0.6, 0.6);
-				sprites.add(festivalSky);
-				add(festivalSky);
+				var festivalsky:BGSprite = new BGSprite('bg', -400, -400, Paths.image('backgrounds/shared/sky_festival'), null, 0.6, 0.6);
+				sprites.add(festivalsky);
+				add(festivalsky);
 
 				if (SONG.song.toLowerCase() == 'rano')
 				{
@@ -2607,18 +2607,18 @@ class PlayState extends MusicBeatState
 				bgZoom = 0.4;
 				stageName = 'freeplay';
 				
-				darkSky = new BGSprite('darkSky', darkSkyStartPos, 0, Paths.image('recursed/darkSky'), null, 1, 1, true);
-				darkSky.scale.set((1 / bgZoom) * 2, 1 / bgZoom);
-				darkSky.updateHitbox();
-				darkSky.y = (FlxG.height - darkSky.height) / 2;
-				add(darkSky);
+				darksky = new BGSprite('darksky', darkskyStartPos, 0, Paths.image('recursed/darksky'), null, 1, 1, true);
+				darksky.scale.set((1 / bgZoom) * 2, 1 / bgZoom);
+				darksky.updateHitbox();
+				darksky.y = (FlxG.height - darksky.height) / 2;
+				add(darksky);
 				
-				darkSky2 = new BGSprite('darkSky', darkSky.x - darkSky.width, 0, Paths.image('recursed/darkSky'), null, 1, 1, true);
-				darkSky2.scale.set((1 / bgZoom) * 2, 1 / bgZoom);
-				darkSky2.updateHitbox();
-				darkSky2.x = darkSky.x - darkSky.width;
-				darkSky2.y = (FlxG.height - darkSky2.height) / 2;
-				add(darkSky2);
+				darksky2 = new BGSprite('darksky', darksky.x - darksky.width, 0, Paths.image('recursed/darksky'), null, 1, 1, true);
+				darksky2.scale.set((1 / bgZoom) * 2, 1 / bgZoom);
+				darksky2.updateHitbox();
+				darksky2.x = darksky.x - darksky.width;
+				darksky2.y = (FlxG.height - darksky2.height) / 2;
+				add(darksky2);
 
 				freeplayBG = new BGSprite('freeplay', 0, 0, daveBG, null, 0, 0, true);
 				freeplayBG.setGraphicSize(Std.int(freeplayBG.width * 2));
@@ -2648,7 +2648,7 @@ class PlayState extends MusicBeatState
 				bgZoom = 0.8;
 				stageName = 'bedroom';
 				
-				var sky:BGSprite = new BGSprite('nightSky', -285, 318, Paths.image('backgrounds/bedroom/sky', 'shared'), null, 0.8, 0.8, true);
+				var sky:BGSprite = new BGSprite('nightsky', -285, 318, Paths.image('backgrounds/bedroom/sky', 'shared'), null, 0.8, 0.8, true);
 				sprites.add(sky);
 				add(sky);
 
@@ -2750,7 +2750,7 @@ class PlayState extends MusicBeatState
 				bgZoom = 0.85;
 				stageName = 'garrettLand';
 					
-				var bg:BGSprite = new BGSprite('bg', -50, -300, Paths.image('backgrounds/field/nightSky', 'shared'), null, 0.5, 0.3, true, true);
+				var bg:BGSprite = new BGSprite('bg', -50, -300, Paths.image('backgrounds/field/nightsky', 'shared'), null, 0.5, 0.3, true, true);
 				bg.antialiasing = FlxG.save.data.globalAntialiasing;
 				bg.setGraphicSize(Std.int(bg.width * 2));
 				sprites.add(bg);
@@ -2857,10 +2857,10 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Bambi
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/ImportSkyBam', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				bambiFarmDream.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/ImportskyBam', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				bambiFarmDream.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/ImportShapesBam', 'shared'), null);
 				add(Shapes);
@@ -2874,10 +2874,10 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Dave
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyDave', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				daveHouseDream.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				daveHouseDream.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave', 'shared'), null);
 				add(Shapes);
@@ -2891,10 +2891,10 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Tristan
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyTristan', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				daveHouseDream.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyTristan', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				daveHouseDream.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesTristan', 'shared'), null);
 				add(Shapes);
@@ -2908,10 +2908,10 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyCheating', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				threedeeFarmDream1.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyCheating', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				threedeeFarmDream1.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesCheating', 'shared'), null);
 				add(Shapes);
@@ -2925,10 +2925,10 @@ class PlayState extends MusicBeatState
 			}
 			if (SONG.song.toLowerCase() == "importumania") // 3d Bambi (Unfairness)
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyUnfairness', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				threedeeFarmDream2.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyUnfairness', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				threedeeFarmDream2.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesUnfairness', 'shared'), null);
 				add(Shapes);
@@ -2943,10 +2943,10 @@ class PlayState extends MusicBeatState
 
 			if (SONG.song.toLowerCase() == "importumania") // 3d Dave
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyDave3D', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				davethreedeeHouseDream.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyDave3D', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				davethreedeeHouseDream.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesDave3D', 'shared'), null);
 				add(Shapes);
@@ -2961,10 +2961,10 @@ class PlayState extends MusicBeatState
 
 			if (SONG.song.toLowerCase() == "importumania") // Expunged True Form
 			{
-				var Sky:BGSprite = new BGSprite('BGSky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_SkyExpunged', 'shared'), null);
-				add(Sky);
-                                Sky.setGraphicSize(Std.int(Sky.width * 3.1));
-				threedeeFarmDream3.push(Sky);
+				var sky:BGSprite = new BGSprite('BGsky', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_skyExpunged', 'shared'), null);
+				add(sky);
+                                sky.setGraphicSize(Std.int(sky.width * 3.1));
+				threedeeFarmDream3.push(sky);
 		
 				var Shapes:BGSprite = new BGSprite('BGShapes', -3700, -2400, Paths.image('backgrounds/importumania/Importumania_ShapesExpunged', 'shared'), null);
 				add(Shapes);
@@ -3058,9 +3058,9 @@ class PlayState extends MusicBeatState
 			}
 
 			if (SONG.song.toLowerCase() == "importumania") {
-				var Sky:BGSprite;
+				var sky:BGSprite;
 				var Shapes:BGSprite;
-				voidShader(Sky);
+				voidShader(sky);
 		        	voidShader(Shapes);
                         }
 
@@ -4175,12 +4175,12 @@ class PlayState extends MusicBeatState
 			charBackdrop.x -= scrollSpeed * elapsed;
 			charBackdrop.y += scrollSpeed * elapsed;
 
-			darkSky.x += 40 * scrollSpeed * elapsed;
-			if (darkSky.x >= (darkSkyStartPos * 4) - 1280)
+			darksky.x += 40 * scrollSpeed * elapsed;
+			if (darksky.x >= (darkskyStartPos * 4) - 1280)
 			{
-				darkSky.x = resetPos;
+				darksky.x = resetPos;
 			}
-			darkSky2.x = darkSky.x - darkSky.width;
+			darksky2.x = darksky.x - darksky.width;
 			
 			var lerpVal = 0.97;
 			freeplayBG.alpha = FlxMath.lerp(0, freeplayBG.alpha, lerpVal);
