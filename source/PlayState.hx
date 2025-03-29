@@ -2873,7 +2873,7 @@ class PlayState extends MusicBeatState
 				var platform:BGSprite = new BGSprite('BGPlatform', -600, -750, Paths.image('backgrounds/importumania/Import_BamPlat', 'shared'), null);
 				add(platform);
                                 platform.setGraphicSize(Std.int(platform.width * 2.0));
-				bambiFarmDream.push(platform;
+				bambiFarmDream.push(platform);
 			}
 			if (SONG.song.toLowerCase() == "importumania") // Dave
 			{
